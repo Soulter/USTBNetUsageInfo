@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="输入学号(含U)..."
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/submit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnbtn"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="22dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#09A6A5"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="12dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="已用流量(点击刷新)"
+                android:textColor="#ffffff"
+                android:layout_above="@id/net_usage_tv"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/net_usage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Loading..."
+                android:textColor="#ffffff"
+                android:textSize="36dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/change_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="更换学号"
+        android:textColor="#636161"
+        android:textSize="12dp"
+        android:layout_below="@id/btnbtn"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:text="Made by Soulter QQ905617992"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp">
+
+    </TextView>
+
+</RelativeLayout>
