@@ -11,3 +11,6 @@ http://202.204.48.82:801/eportal/portal/visitor/loadUserFlow?&account=U202141035
 学号可以填任何一个有效的北科大学号（所以这是漏洞吗哈哈哈）
 
 
+必须要处在北科大校园网中才能正常使用。
+
+
