@@ -78,11 +78,44 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:text="Loading..."
-                android:textColor="#ffffff"
-                android:textSize="36dp"
+                android:textColor="#FFC0CB"
+
+                android:textSize="72dp"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="24dp"
                 android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/net_usage_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_toRightOf="@id/net_usage_tv"
+                android:layout_alignBottom="@id/net_usage_tv"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/net_usage_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_alignBottom="@id/net_usage_tv"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="96dp">
 
             </TextView>
 
@@ -96,21 +129,41 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/change_id"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:text="更换学号"
-        android:textColor="#636161"
-        android:textSize="12dp"
         android:layout_below="@id/btnbtn"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:textStyle="bold">
+        android:gravity="center_horizontal">
 
-    </TextView>
+        <TextView
+            android:id="@+id/change_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更换学号"
+            android:textColor="#636161"
+            android:textSize="12dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/auto_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键登录校园网"
+            android:textColor="#636161"
+            android:textSize="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
 
     <TextView
         android:text="Made by Soulter QQ905617992"
